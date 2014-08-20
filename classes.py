@@ -10,6 +10,8 @@ class mediaFile:
         ep = 0
         epTitle = ""
         hash = ""
+        year = 0
+        format = ""
 
     def idmedia(mediaFile):
     BLOCKSIZE = 65536
