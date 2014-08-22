@@ -1,24 +1,37 @@
-import hashlib,
+import hashlib
 __author__ = 'david'
 
 class mediaFile:
-    def __init__(self,originDirectory):
-        originDirectory = ""
-        newDirectory = ""
-        series = ""
-        se = ""
-        ep = 0
-        epTitle = ""
-        hash = ""
-        year = 0
-        format = ""
+    def __init__(self):
+        self.originDirectory = ""
+        self.newDirectory = ""
+        self.series = ""
+        self.se = ""
+        self.ep = 0
+        self.title = ""
+        self.hash = ""
+        self.year = 0
+        self.month = 0
+        self.day = 0
+        self.format = ""
+        self.album = ""
+        self.trackNum = 0
+        self.artist = ""
+        self.publisher = ""
+        self.vertiRes = ""
+        self.horiRes = ""
+        self.genre = ""
+        self.mediaType = ""
 
-    def idmedia(mediaFile):
-    BLOCKSIZE = 65536
-    hasher = hashlib.sha256()
-    with open(mediaFile, 'rb') as afile:
-        buf = afile.read(BLOCKSIZE)
-        while len(buf) > 0:
-            hasher.update(buf)
+
+    def idmedia(self, inputMedia):
+        BLOCKSIZE = 65536
+        hasher = hashlib.sha256()
+        with open(inputMedia, 'rb') as afile:
             buf = afile.read(BLOCKSIZE)
-    hash = hasher.hexdigest()
+            while len(buf) > 0:
+                hasher.update(buf)
+                buf = afile.read(BLOCKSIZE)
+        self.hash = hasher.hexdigest()
+
+    def checkDatabase(self, hash):
