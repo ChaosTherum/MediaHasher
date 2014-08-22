@@ -3,25 +3,25 @@ __author__ = 'david'
 
 class mediaFile:
     def __init__(self):
-        self.originDirectory = ""
-        self.newDirectory = ""
-        self.series = ""
-        self.se = ""
-        self.ep = 0
-        self.title = ""
-        self.hash = ""
-        self.year = 0
-        self.month = 0
-        self.day = 0
-        self.format = ""
         self.album = ""
-        self.trackNum = 0
         self.artist = ""
-        self.publisher = ""
-        self.vertiRes = ""
-        self.horiRes = ""
+        self.day = 0
+        self.ep = 0
+        self.format = ""
         self.genre = ""
+        self.hash = ""
+        self.horiRes = ""
         self.mediaType = ""
+        self.month = 0
+        self.newDirectory = ""
+        self.originDirectory = ""
+        self.publisher = ""
+        self.se = ""
+        self.series = ""
+        self.title = ""
+        self.trackNum = 0
+        self.vertiRes = ""
+        self.year = 0
 
 
     def idmedia(self, inputMedia):
