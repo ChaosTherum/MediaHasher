@@ -23,7 +23,7 @@ class mediaFile:
         self.vertiRes = ""
         self.year = 0
 
-
+#Attribution #2
     def idmedia(self, inputMedia):
         BLOCKSIZE = 65536
         hasher = hashlib.sha256()

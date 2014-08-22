@@ -2,6 +2,7 @@ import os
 
 def get_filepaths(directory):
     """
+    Attribution #1
     This function will generate the file names in a directory
     tree by walking the tree either top-down or bottom-up. For each
     directory in the tree rooted at directory top (including top itself),
